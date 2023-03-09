@@ -1,16 +1,3 @@
-.testimonials-module--wrapper:before {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODgiIGhlaWdodD0iMTYzIiBmaWxsPSJub25lIiB2aWV3Qm94PSIwIDAgMTg4IDE2MyI+PHBhdGggZmlsbD0iIzdFNUJENiIgZD0iTTg2LjgxNSAxNjNIMFY5Ni4wODJjMC0yNC42MzYgNS4xMjItNDQuMDc5IDE1LjM2Ny01OC4zMjhDMjUuNjEyIDIzLjUwNCA0My4xNzUgMTAuOTIgNjguMDU1IDBsMTguNzYgMzUuNTU3Yy0xNS4zIDcuMTktMjUuODc4IDE0LjM4Mi0zMS43MzIgMjEuNTczLTUuODU0IDcuMDU4LTkuMTE0IDE1LjQ0OC05Ljc4IDI1LjE3aDQxLjUxMlYxNjNaTTE4OCAxNjNoLTg2LjgxNVY5Ni4wODJjMC0yNC42MzYgNS4xMjItNDQuMDc5IDE1LjM2Ny01OC4zMjhDMTI2Ljc5NyAyMy41MDQgMTQ0LjM2IDEwLjkyIDE2OS4yNCAwTDE4OCAzNS41NTdjLTE1LjMwMSA3LjE5LTI1Ljg3OCAxNC4zODItMzEuNzMyIDIxLjU3My01Ljg1NSA3LjA1OC05LjExNCAxNS40NDgtOS43OCAyNS4xN0gxODhWMTYzWiIvPjwvc3ZnPg==);
-    background-position: 50%;
-    background-repeat: no-repeat;
-    content: "";
-    height: 163px;
-    left: -3rem;
-    pointer-events: none;
-    position: absolute;
-    top: -6rem;
-    width: 188px;
-}
-
 .background-module--background {
     background-position: 50%;
     background-repeat: no-repeat;

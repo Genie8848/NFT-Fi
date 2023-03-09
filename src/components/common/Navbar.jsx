@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import clsx from 'clsx'
 import { Link } from 'react-router-dom'
 // import './navbar.css'
@@ -20,22 +20,56 @@ const Navbar = () => {
   return (
     <header
       className={clsx(
-        'flex w-full items-center h-24 justify-center top-0 left-0 right-0 !fixed !z-50',
+        'flex w-full items-center justify-center top-0 left-0 right-0 !fixed !z-50',
       )}
       style={{
-        backgroundColor: `rgba(22, 21, 45, ${0.005 * scrollPosition})`,
+        background: 'linear-gradient(180deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 2, 0.7) 100%)',
+        backdropFilter: 'blur(25px)',
+        width: '100%',
+        height: '70px',
       }}
     >
-      <div className='w-11/12 sm:w-10/12 xl:w-3/4 flex justify-between items-center'>
-        <a className='text-inherit flex-[1]' href='/' aria-current='page'>
+      <div className='w-11/12 sm:w-10/12 xl:w-3/4 flex justify-between items-center'
+        style={{
+          height: '70px',
+        }}
+      >
+        <a className='text-inherit flex-[1]' href='/' aria-current='page'
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            padding: 0,
+          }}
+        >
           <img
             // className='plain-image-module--image'
-            src='/images/nftfi-logo.svg'
-            alt='NFTfi'
-            width='91'
-            height='35'
+            src='/images/loanSharks-logo.svg'
+            alt='loanSharks'
             loading='lazy'
+            style={{
+              width: '50px',
+              height: '50px',
+            }}
           />
+          <div style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'flex-start',
+            padding: '10px',
+            gap: '10px',
+          }}>
+            <p style={{
+              fontFamily: 'Josefin Sans',
+              fontStyle: 'normal',
+              fontWeight: '400',
+              fontSize: '24px',
+              lineHeight: '24px',
+              color: '#ffffff'
+            }}>
+              LoanSharks
+            </p>
+          </div>
         </a>
         <nav className='hidden font-Lato flex-[3] xl:flex-[2] lg:flex'>
           <ul className='flex list-none justify-between items-center py-6 text-white gap-x-5 w-full'>
@@ -49,28 +83,32 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='/how-it-works/'>
+              <Link onClick={() => {
+                window.location.replace("/#howtoworks");
+              }}>
                 <span>How it works</span>
               </Link>
             </li>
             <li>
-              <a href='https://app.nftfi.com/lend/assets' rel='noreferrer' target='_blank'>
+              <a href='app/lend/assets' rel='noreferrer' target='_blank'>
                 <span>Lend</span>
               </a>
             </li>
             <li>
-              <a href='https://app.nftfi.com/borrow/assets' rel='noreferrer' target='_blank'>
+              <a href='app/borrow/assets' rel='noreferrer' target='_blank'>
                 <span>Borrow</span>
               </a>
             </li>
             <li>
-              <a href='https://discord.gg/nftfi' rel='noreferrer' target='_blank'>
+              <a href='https://discord.gg/sMTDDWyK' rel='noreferrer' target='_blank'>
                 <span>Community</span>
               </a>
             </li>
             <li>
-              <Link href='/blog/'>
-                <span>Blog</span>
+              <Link onClick={() => {
+                window.location.replace("/#faqs");
+              }}>
+                <span>FAQs</span>
               </Link>
             </li>
             <li
@@ -82,7 +120,11 @@ const Navbar = () => {
               <Link
                 // href='https://app.nftfi.com/borrow/assets'
                 to='/app/borrow/assets'
-                className='bg-[#7e5bd6] inline-flex px-5 py-3 h-full w-full text-white leading-6 font-Lato  cursor-pointer font-bold gap-x-3 justify-center text-base decoration-transparent'
+                className='inline-flex px-5 py-3 h-full w-full text-white leading-6 font-Lato  cursor-pointer font-bold gap-x-3 justify-center text-base decoration-transparent'
+                style={{
+                  background: 'linear-gradient(257.25deg, #EBD259 4.97%, #DBB346 89.06%)',
+                  borderRadius: '3px',
+                }}
               >
                 Open dApp
               </Link>
@@ -103,7 +145,7 @@ const Navbar = () => {
           </svg>
         </button>
       </div>
-    </header>
+    </header >
   )
 }
 

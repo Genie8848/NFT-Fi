@@ -1,167 +1,129 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './home_hero.css'
 import clsx from 'clsx'
 
 const HowItWorks = () => {
+  const [step, setStep] = useState(1);
+
   const borrowersList = [
     {
       id: 1,
-      title: 'List your NFT & start getting loan offers',
-      description:
-        'First, you need to list your NFT and set the desired terms of the loan. After you list your NFT, other users will give you loan offers.',
-      img: '/images/how-it-works-1-borrowing-2x.webp',
+      description: 'All loans will be in Hbar.',
     },
     {
       id: 2,
-      title: 'Receive loan offers & accept the best one',
-      description:
-        'When you accept a loan offer, your NFT goes into a secure escrow smart contract, and you receive the wETH, DAI, or USDC from the lender directly to your wallet!',
-      img: '/images/how-it-works-2-borrowing-2x.webp',
+      description: 'You will be able to list your NFT with loan agreement to your specifications, a lender can come and fund the loan.',
     },
     {
       id: 3,
-      title: 'Repay the loan & get your NFT back',
-      description:
-        'If you repay your loan in time, you will automatically receive your NFT back in your wallet!',
-      img: '/images/how-it-works-3-borrowing-2x.webp',
+      description: 'Loan agreements have option for negotiation with the variables mentioned above.',
+    },
+    {
+      id: 4,
+      description: 'Once a loan is funded, the NFT used as collateral will be sent to an escrow account where it will remain until loan is repaid with interest or borrower defaults.',
+    },
+    {
+      id: 5,
+      description: 'If borrower defaults, lender will be able to claim NFT.',
     },
   ]
 
   return (
-    <section className='!overflow-y-hidden pt-48 flex justify-center'>
-      <div className=' max-w-[1140px] w-full relative z-20 text-center flex flex-col items-center'>
-        <h2 className='font-semibold text-4xl text-navy leading-[53px] font-Lato'>How it works</h2>
-        <p className=' max-w-3xl text-center text-navy_light font-normal'>
-          NFTfi is the leading liquidity protocol for NFTs. NFTfi allows NFT holders to borrow
-          cryptocurrency from lenders by using their NFTs as collateral.
+    <section id='howtoworks' className='!overflow-y-hidden pt-48 flex justify-center bg-[#1E1E1E] text-white'>
+      <div className='w-90 relative z-20 text-center flex flex-col items-center'>
+        <h2 className='font-semibold text-4xl leading-[53px] font-Lato'>How loans will works</h2>
+        <p className=' max-w-3xl text-center font-normal'>
+          On LoanSharks you will be able to be the borrower or the lender.
         </p>
-        <div className='my-14'>
-          <Link
-            style={{
-              '&:hover': {
-                color: 'blue !important',
-              },
-            }}
-            className='text-primary border-primary border py-4 px-8 bg-primary/10 font-medium hover:bg-primary hover:text-white'
-            href='/how-it-works/'
-          >
-            Learn more
-          </Link>
-        </div>
         <div className='font-Lato w-full' data-rttabs='true'>
-          <ul className='flex items-center justify-center gap-x-5' role='tablist'>
-            <li
-              className={clsx(
-                'cursor-pointer uppercase inline-flex leading-6 whitespace-nowrap p-4 relative hover:text-primary react-tabs__tab text-base tracking-widest font-Lato',
-                'after:absolute after:h-5 after:bg-primary',
-              )}
-              role='tab'
-              id='tab:R229:0'
-              aria-selected='true'
-              aria-disabled='false'
-              aria-controls='panel:R229:0'
-              data-rttab='true'
-            >
-              Borrowers
-            </li>
-            <li
-              className={clsx(
-                'cursor-pointer uppercase inline-flex leading-6 whitespace-nowrap p-4 relative hover:text-primary react-tabs__tab text-base tracking-widest font-Lato',
-                'after:absolute after:h-5 after:bg-primary',
-              )}
-              role='tab'
-              id='tab:R229:1'
-              aria-selected='false'
-              aria-disabled='false'
-              aria-controls='panel:R229:1'
-              data-rttab='true'
-            >
-              Lenders
-            </li>
-            <li
-              className={clsx(
-                'cursor-pointer uppercase inline-flex leading-6 whitespace-nowrap p-4 relative hover:text-primary react-tabs__tab text-base tracking-widest font-Lato',
-                'after:absolute after:h-5 after:bg-primary',
-              )}
-              role='tab'
-              id='tab:R229:2'
-              aria-selected='false'
-              aria-disabled='false'
-              aria-controls='panel:R229:2'
-              data-rttab='true'
-            >
-              Institutions
-            </li>
-          </ul>
           <div
             className='w-full my-14'
             role='tabpanel'
             id='panel:R229:0'
             aria-labelledby='tab:R229:0'
           >
-            <div className='w-full flex flex-col gap-y-10 my-10'>
+            <div className='w-full flex flex-col'>
               <ol className='font-Lato gap-y-10 my-10  flex flex-col relative overflow-hidden '>
                 {borrowersList.map((item, i) => {
                   return (
                     <li
                       key={item.id}
-                      className={clsx(
-                        'cursor-pointer  list-none list flex items-start justify-between gap-x-10 group relative ',
-                      )}
+                      className=''
                     >
-                      <div className='w-1/2 text-left py-10 peer flex relative'>
-                        <div className=' mx-5  relative'>
-                          <h1 className='relative text-6xl text-navy_light/50 group-hover:text-primary font-bold font-Lato px-5'>
+                      <div className='w-1/2 text-left py-1 peer flex relative px-5'>
+                        <div className=' mx-5 relative'>
+                          <h1 className='relative text-[36px] group-hover:text-primary font-bold font-Lato px-5'>
                             {i + 1}
                           </h1>
                           <div className='hidden group-hover:flex w-full h-full max-h-[30px] max-w-[30px] absolute top-10 right-2 bg-primary blur-lg'></div>
                         </div>
-                        <div>
-                          <h3 className='text-navy font-Lato font-bold leading-8 mb-4 text-2xl'>
-                            {item.title}
-                          </h3>
-                          <p className='text-navy_light font-Roboto'>{item.description}</p>
+                        <div className='flex flex-col justify-center'>
+                          <p className='font-Roboto text-[18px]'>{item.description}</p>
                         </div>
                       </div>
-                      <div
-                        style={{
-                          zIndex: 10 - i,
-                        }}
-                        className={clsx(
-                          'w-1/2 h-full absolute right-0 top-0 group-hover:z-30 peer-hover:z-30 peer-hover:block  group-hover:block ',
-                          '',
-                        )}
-                      >
-                        <div className='p-10 !bg-blue-900  h-full'>
-                          <div
-                            style={{
-                              maxWidth: '563px',
-                              display: 'block',
-                            }}
-                            className='max-w-[500px] bg-white'
-                          >
-                            <img
-                              alt=''
-                              role='presentation'
-                              aria-hidden='true'
-                              src={item.img}
-                              style={{
-                                maxWidth: '100%',
-                                display: 'block',
-                                position: 'static',
-                              }}
-                            />
+                      {
+                        item.id == step &&
+                        <div
+                          style={{
+                            zIndex: 10 - i,
+                          }}
+                          className={clsx(
+                            'flex flex-col justify-center w-1/2 h-full absolute right-0 top-0 group-hover:z-30 peer-hover:z-30 peer-hover:block group-hover:block ',
+                            '',
+                          )}
+                        >
+                          <div className='flex flex-col gap-5 justify-center'>
+                            <div className='flex flex-row gap-5 justify-center'>
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                            </div>
+                            <div className='flex flex-row gap-5 justify-center'>
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                              <img
+                                alt=''
+                                role='presentation'
+                                aria-hidden='true'
+                                src='/images/how-it-works-loansharks1.png'
+                              />
+                            </div>
                           </div>
                         </div>
-                      </div>
+                      }
                     </li>
                   )
                 })}
               </ol>
-              <div className='self-start px-24 my-10'>
+              <div className='hidden self-start px-24 my-10 rounded'>
                 <a
-                  className='border-primary border-2 hover:bg-primary hover:text-white font-bold text-primary py-4 px-10'
+                  className='bg-[#EBD259] font-bold text-black py-4 px-10 rounded'
                   href='/how-it-works/'
                 >
                   More about borrowing

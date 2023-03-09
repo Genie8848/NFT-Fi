@@ -3,15 +3,18 @@ import { Link } from 'react-router-dom'
 import './faqs.css'
 import clsx from 'clsx'
 
-const FaqItem = (faqItem) => {
+const FaqItem = ({
+  question,
+  answer,
+}) => {
   const [isOpen, setIsOpen] = useState(false)
+
   return (
     <div className='accordion-module--item'>
       <button
         onClick={() => setIsOpen((prev) => !prev)}
-        onBlur={() => setIsOpen(false)}
         className={clsx(
-          'accordion-module--button !transition-all duration-500 ease-in-out !font-Lato !text-navy',
+          'accordion-module--button !transition-all duration-500 ease-in-out !font-Lato',
           isOpen && 'accordion-module--open',
         )}
       >
@@ -19,7 +22,7 @@ const FaqItem = (faqItem) => {
           width='20'
           height='4'
           viewBox='0 0 20 4'
-          fill='currentColor'
+          fill='#EBD259'
           className={clsx(
             '!transition-opacity !duration-500 !ease-in-out',
             isOpen ? 'flex' : 'hidden',
@@ -32,7 +35,7 @@ const FaqItem = (faqItem) => {
           width='20'
           height='20'
           viewBox='0 0 20 20'
-          fill='currentColor'
+          fill='#EBD259'
           className={clsx(
             '!transition-opacity !duration-500 !ease-in-out',
             !isOpen ? 'flex' : 'hidden',
@@ -45,39 +48,19 @@ const FaqItem = (faqItem) => {
             d='M12 0H8V8H0V12H8V20H12V12H20V8H12V0Z'
           ></path>
         </svg>
-        Why do collectors and artists love NFTfi?
+        {question}
       </button>
       <div
         className={clsx(
           'accordion-module--content px-14 !transition-all !duration-500 !ease-in-out',
-          isOpen && '!h-auto px-10 py-5 inline-flex overflow-hidden border',
+          isOpen && '!h-auto px-10 py-5 inline-flex overflow-hidden',
         )}
       >
         <div className='accordion-module--inner !px-10'>
-          <div className='contentful-rich-text-module--richtext !font-Roboto'>
+          <div className='contentful-rich-text-module--richtext !font-Roboto text-white'>
             <p>
-              The ability to access liquidity against their NFTs without selling the asset gives
-              unprecedented financial flexibility to NFT holders, especially if they have a large
-              percentage of their portfolio locked up in these illiquid assets.&nbsp;
+              {answer}
             </p>
-            <p>
-              A few examples of what the liquidity obtained via NFTfi can be used for include:&nbsp;
-            </p>
-            <ul className='list-disc px-10 py-1'>
-              <li>Serving immediate liquidity needs (e.g. covering margin positions)</li>
-              <li>
-                Taking advantage of short-term investment opportunities (e.g. high-yield liquidity
-                mining or NFT flips)
-              </li>
-              <li>
-                Taking advantage of long-term investment opportunities (e.g. buying real estate;
-                long-term loans is now supported in NFTfi V2)
-              </li>
-              <li>Delaying a planned sale of an NFT for more opportune market conditions</li>
-              <li>Delaying a planned sale of an NFT to defer potential capital gains tax</li>
-              <li>Financing ‘real life’ needs without having to sell valuable assets</li>
-            </ul>
-            <p></p>
           </div>
         </div>
       </div>
@@ -85,24 +68,85 @@ const FaqItem = (faqItem) => {
   )
 }
 const Faqs = () => {
+  const faqList = [
+    {
+      question: 'What is a P2P decentralized NFT loan marketplace?',
+      answer: 'It is a marketplace where you can list an NFT as collateral, borrow off an illiquid NFT, and fund loans to generate profits.'
+    },
+    {
+      question: 'What measure of security is LoanSharks taking?',
+      answer: 'LoanSharks platform will be double audited and will have a full time dev maintaining platform on a daily basis.'
+    },
+    {
+      question: 'Reason for taking NFT loans?',
+      answer: 'To unlock liquidity from an illiquid NFT.'
+    },
+    {
+      question: 'Reason for funding loans?',
+      answer: 'You can make 1%-10% of loan amount in a 1-60 day period.'
+    },
+    {
+      question: 'What happens if loan is not repaid?',
+      answer: ' lender will be able to claim NFT used as collateral and borrower stays with capital from the lender.'
+    },
+    {
+      question: 'What fee does LoanSharks charge?',
+      answer: 'LoanSharks takes 2.5% of all borrowed Hbar volume as soon as borrower receives loan from lender.'
+    },
+    {
+      question: 'What if NFT in escrow receives airdrop?',
+      answer: 'Borrower will be able to claim NFT, airdrop ,or rewards if loan is repaid, if not lender will keep all.'
+    },
+    {
+      question: 'What NFT projects will be listed?',
+      answer: 'We want to offer as much NFT projects as possible as collateral options.'
+    },
+    {
+      question: 'Utility for NFT?',
+      answer: 'Rev share , 10+ NFTs you get special access to chat, and loads more to come as LoanSharks scales.'
+    },
+    {
+      question: 'When will platform be fully functional and audited?',
+      answer: 'Late March early April.'
+    },
+    {
+      question: 'When rev share starts?',
+      answer: '2 months after dapp being fully functional.'
+    },
+    {
+      question: 'When will timer start for repayment?',
+      answer: 'As soon as borrower accepts loan and receives Hbar in wallet.'
+    },
+    {
+      question: 'Can I get liquidated?',
+      answer: 'Nope.'
+    },
+    {
+      question: 'Pre-Payment penalty?',
+      answer: 'Nope, but full will have to still pay full loan amount at time of repayment.'
+    },
+  ];
+
   return (
-    <section className='py-24 flex z-20 justify-center items-center bg-[#f2f8ff]  section-module--section--27a22 questions-module--section--d270f section-module--lightblue--baa20'>
+    <section id="faqs" className='bg-[#262424] text-white flex z-20 justify-center items-center section-module--section--27a22 questions-module--section--d270f section-module--lightblue--baa20'>
       <div className='relative w-11/12 md:w-10/12 lg:w-3/4 flex flex-col items-center container-module--container--3a7e6 container-module--constrained--28f48'>
-        <h2 className='text-6xl font-Lato text-navy my-5 font-bold title-module--title--73b11 title-module--center--3ded2'>
-          Got questions?
+        <h2 className='text-4xl font-Lato my-5 font-bold title-module--title--73b11 title-module--center--3ded2'>
+          FAQs
         </h2>
-        <p className='text-lg max-w-[850px] py-2 text-navy_light font-Roboto text-center intro-module--intro--5e21f questions-module--intro--d24dc intro-module--center--87e61'>
+        <p className='text-lg max-w-[850px] py-2 font-Roboto text-center intro-module--intro--5e21f questions-module--intro--d24dc intro-module--center--87e61'>
           Peer-to-peer NFT lending is a pretty simple concept, and you can quickly learn the basics
           by scrolling through our FAQ section.
         </p>
         <div className='py-10 accordion-module--accordion questions-module--questions max-w-[700px]'>
-          {[1, 2, 3, 4, 5, 6].map((item, i) => {
-            return <FaqItem key={item} />
-          })}
+          {
+            faqList.map((item, index) => {
+              return <FaqItem key={index} question={item.question} answer={item.answer} />
+            })
+          }
         </div>
-        <div className='my-14'>
+        <div className='hidden my-14'>
           <Link
-            className='px-10 py-5 border-primary border-2 hover:bg-primary text-primary font-bold hover:text-white '
+            className='px-10 py-5 bg-[#EBD259] font-bold text-black rounded'
             href='/faq/'
           >
             Go to FAQ section

@@ -22,8 +22,8 @@
         "no-duplicate-imports": "error",
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off",
-        "no-unused-vars": "off"
-
+        "no-unused-vars": "off",
+        "react/prop-types": "off"
     },
     "settings": {
         "import/resolver": {

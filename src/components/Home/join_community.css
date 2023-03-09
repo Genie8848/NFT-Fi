@@ -28,7 +28,6 @@
 }
 
 .background-module--joinus:before {
-    background: rgba(203, 43, 131, .12) !important;
     filter: blur(87px);
     left: 10%;
     margin: -229.5px 0 0 -229.5px;
@@ -37,7 +36,6 @@
 }
 
 .background-module--joinus:after {
-    background: rgba(126, 91, 214, .29);
     bottom: 20%;
     filter: blur(130.611px);
     left: 90%;
@@ -46,7 +44,6 @@
 }
 
 .background-module--joinus:before {
-    background: rgba(203, 43, 131, .12);
     filter: blur(87px);
     left: 10%;
     margin: -229.5px 0 0 -229.5px;

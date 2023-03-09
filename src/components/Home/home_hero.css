@@ -1,11 +1,12 @@
 .section-module--hero {
     align-items: center;
-    background: linear-gradient(180deg, #383651, #17162c);
+    background: #1E1E1E;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: -6rem;
     padding: 12rem 0 6rem;
+    position: 'relative',
 }
 
 .background-module--background {
@@ -23,7 +24,7 @@
 }
 
 .background-module--hero:before {
-    background: rgba(203, 43, 131, .12);
+    background: #1E1E1E;
     filter: blur(87px);
     left: 15%;
     margin: -229.5px 0 0 -229.5px;
@@ -38,7 +39,7 @@
 }
 
 .background-module--hero:after {
-    background: rgba(126, 91, 214, .29);
+    background: #1E1E1E;
     filter: blur(130.611px);
     left: 99%;
     margin: -293.5px 0 0 -293.5px;
@@ -58,7 +59,7 @@
 
 .background-module--hero div {
     aspect-ratio: 1/1;
-    background: rgba(0, 163, 208, .14);
+    background: #1E1E1E;
     border-radius: 100%;
     content: "";
     filter: blur(72px);
@@ -73,14 +74,15 @@
 }
 
 .hero-title-module--title {
-    font-size: 56px;
+    font-size: 32px;
     font-weight: 700;
     letter-spacing: -.5px;
     line-height: 67px;
     margin-bottom: 24px;
-    text-align: center;
     color: white;
     text-align: left;
+    font-family: Lato;
+    min-width: '1366px';
 }
 
 .hero-text-module--text {
@@ -101,7 +103,7 @@
     text-decoration: none;
 }
 
-.link-button-module--button {
+.link-button-loan--button {
     align-items: center;
     border: none;
     cursor: pointer;
@@ -118,16 +120,26 @@
     text-decoration: none;
     transition: border-color .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
     white-space: nowrap;
+    background: linear-gradient(257.25deg, #EBD259 4.97%, #DBB346 89.06%);
+    border-radius: 3px;
 }
 
-.react-tabs__tab:after {
-    background: linear-gradient(90deg, #7e5bd6, rgba(126, 91, 214, 0));
-    bottom: 0;
-    content: "";
-    height: 5px;
-    left: 0;
-    position: absolute;
-    transition: width .2s ease-in-out;
-    width: 100%;
-    width: 0;
+.link-button-lend--button {
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 700;
+    gap: .75rem;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: .1px;
+    line-height: 24px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-decoration: none;
+    transition: border-color .2s ease-in-out, background-color .2s ease-in-out, color .2s ease-in-out;
+    white-space: nowrap;
+    border-radius: 3px;
 }

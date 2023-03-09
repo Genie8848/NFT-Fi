@@ -16,8 +16,6 @@ const HomePage = () => {
       <HowItWorks />
       <Testimonials />
       <WhyNFT />
-      <LatestBlog />
-      <TopCollections />
       <JoinCommunity />
       <Faqs />
       <GetLiquidity />
