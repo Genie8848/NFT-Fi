@@ -11,8 +11,8 @@ const GetLiquidity = () => {
 
         <div className='hero-buttons-module--buttons flex items-center justify-start gap-x-5 mb-14 relative'>
           <a
-            className='link-button-loan--button bg-primary hover:bg-primary !text-white  border'
-            href='app/borrow/assets'
+            className='link-button-loan--button bg-primary hover:bg-primary !text-white border'
+//            href='app/borrow/assets'
             rel='noreferrer'
             target='_blank'
           >
@@ -20,9 +20,10 @@ const GetLiquidity = () => {
           </a>
           <a
             className='link-button-lend--button text-secondary hover:bg-secondary hover:text-white'
-            href='app/lend/assets'
+//            href='app/lend/assets'
             target='_blank'
             rel='noreferrer'
+            disabled
           >
             I want to lend
           </a>

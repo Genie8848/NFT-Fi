@@ -15,16 +15,6 @@ const Footer = () => {
                 padding: 0,
               }}
             >
-              <img
-                // className='plain-image-module--image'
-                src='/images/loanSharks-logo.svg'
-                alt='loanSharks'
-                loading='lazy'
-                style={{
-                  width: '50px',
-                  height: '50px',
-                }}
-              />
               <div style={{
                 display: 'flex',
                 flexDirection: 'row',

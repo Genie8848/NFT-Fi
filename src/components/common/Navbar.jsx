@@ -42,16 +42,6 @@ const Navbar = () => {
             padding: 0,
           }}
         >
-          <img
-            // className='plain-image-module--image'
-            src='/images/loanSharks-logo.svg'
-            alt='loanSharks'
-            loading='lazy'
-            style={{
-              width: '50px',
-              height: '50px',
-            }}
-          />
           <div style={{
             display: 'flex',
             flexDirection: 'row',
@@ -90,12 +80,20 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <a href='app/lend/assets' rel='noreferrer' target='_blank'>
+              <a
+//                href='app/lend/assets'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <span>Lend</span>
               </a>
             </li>
             <li>
-              <a href='app/borrow/assets' rel='noreferrer' target='_blank'>
+              <a
+//                href='app/borrow/assets'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <span>Borrow</span>
               </a>
             </li>
@@ -119,7 +117,7 @@ const Navbar = () => {
             >
               <Link
                 // href='https://app.nftfi.com/borrow/assets'
-                to='/app/borrow/assets'
+//                to='/app/borrow/assets'
                 className='inline-flex px-5 py-3 h-full w-full text-white leading-6 font-Lato  cursor-pointer font-bold gap-x-3 justify-center text-base decoration-transparent'
                 style={{
                   background: 'linear-gradient(257.25deg, #EBD259 4.97%, #DBB346 89.06%)',

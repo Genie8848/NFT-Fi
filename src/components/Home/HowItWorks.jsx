@@ -49,14 +49,13 @@ const HowItWorks = () => {
                   return (
                     <li
                       key={item.id}
-                      className=''
                     >
                       <div className='w-1/2 text-left py-1 peer flex relative px-5'>
                         <div className=' mx-5 relative'>
-                          <h1 className='relative text-[36px] group-hover:text-primary font-bold font-Lato px-5'>
+                          <h1 className='relative text-[36px] text-primary font-bold font-Lato px-5'>
                             {i + 1}
                           </h1>
-                          <div className='hidden group-hover:flex w-full h-full max-h-[30px] max-w-[30px] absolute top-10 right-2 bg-primary blur-lg'></div>
+                          <div className='hidden flex w-full h-full max-h-[30px] max-w-[30px] absolute top-10 right-2 bg-primary blur-lg'></div>
                         </div>
                         <div className='flex flex-col justify-center'>
                           <p className='font-Roboto text-[18px]'>{item.description}</p>
@@ -69,7 +68,7 @@ const HowItWorks = () => {
                             zIndex: 10 - i,
                           }}
                           className={clsx(
-                            'flex flex-col justify-center w-1/2 h-full absolute right-0 top-0 group-hover:z-30 peer-hover:z-30 peer-hover:block group-hover:block ',
+                            'flex flex-col justify-center w-1/2 h-full absolute right-0 top-0',
                             '',
                           )}
                         >
