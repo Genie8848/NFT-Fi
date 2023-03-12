@@ -18,10 +18,11 @@ const Footer = () => {
               <div style={{
                 display: 'flex',
                 flexDirection: 'row',
-                alignItems: 'flex-start',
+                alignItems: 'center',
                 padding: '10px',
                 gap: '10px',
               }}>
+                <img alt='logo' loading='lazy' src='/images/loanSharks-logo.svg' />
                 <p style={{
                   fontFamily: 'Josefin Sans',
                   fontStyle: 'normal',

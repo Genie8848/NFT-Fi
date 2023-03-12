@@ -72,47 +72,15 @@ const HowItWorks = () => {
                             '',
                           )}
                         >
-                          <div className='flex flex-col gap-5 justify-center'>
-                            <div className='flex flex-row gap-5 justify-center'>
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                            </div>
-                            <div className='flex flex-row gap-5 justify-center'>
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                              <img
-                                alt=''
-                                role='presentation'
-                                aria-hidden='true'
-                                src='/images/how-it-works-loansharks1.png'
-                              />
-                            </div>
+                          <div className='flex flex-col gap-5 justify-center items-center'>
+                            <img
+                              alt=''
+                              loading='lazy'
+                              src='/images/nft3.png'
+                              style={{
+                                borderRadius: '20px',
+                              }}
+                            />
                           </div>
                         </div>
                       }
