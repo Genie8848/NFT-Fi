@@ -15,7 +15,7 @@ const HomeHero = () => {
               Secure a loan of HBAR from lenders by using your NFT as collateral. Once you repay your loan, you will regain possession of your NFT without the risk of automatic liquidation.
             </p>
           </div>
-          <div className='hero-buttons-module--buttons flex flex-col items-center justify-start gap-x-5 mb-14 relative sm:flex-row gap-y-5'>
+          <div className='hero-buttons-module--buttons flex flex-col items-center justify-start gap-x-5 mb-5 relative sm:flex-row gap-y-5'>
             <a
               className='link-button-loan--button bg-primary hover:bg-primary !text-white border'
               //              href='/app/borrow/assets'
@@ -46,7 +46,7 @@ const HomeHero = () => {
             <span className='flex justify-center items-center text-center'>1-60 days</span>
             <p className='text-sm font-normal'>Maturity date</p>
           </div>
-          <div className='text-3xl font-semibold mb-5'>
+          <div className='text-3xl font-semibold mb-10'>
             <span className='hero-counter-module--count--72757'>1%-20%</span>
             <p className='text-sm font-normal'>Borrower fee (displayed in APR)</p>
           </div>
