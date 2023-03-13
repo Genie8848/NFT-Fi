@@ -8,7 +8,7 @@ const WhyNFT = () => {
         <div className='w-full md:w-2/3 lg:text-left lg:w-1/3 text-center flex flex-1 flex-col gap-8'>
           <h2 className='text-5xl font-bold font-Lato text-white '>Why LoanSharks?</h2>
           <p className='text-gray-400 font-Roboto'>
-            Our mission is to become the number 1 collateralized loan marketplace on the Hedera Network and provide worthwhile revenue share/Utility for all of our Debt collector NFT holders.
+            Our mission is to become the number 1 collateralized loan marketplace on the Hedera Network and provide worthwhile revenue share/utility for all of our Debt collector NFT holders.
           </p>
         </div>
         <div className='w-2/3 grid grid-cols-1 md:grid-cols-2 flex-2 gap-5 md:gap-y-10'>
