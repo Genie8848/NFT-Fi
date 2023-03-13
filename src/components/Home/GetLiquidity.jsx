@@ -9,9 +9,9 @@ const GetLiquidity = () => {
           Put your NFTs to work and get the liquidity you need.
         </h2>
 
-        <div className='hero-buttons-module--buttons flex items-center justify-start gap-x-5 mb-14 relative'>
+        <div className='flex flex-col sm:flex-row items-center justify-start gap-x-5 mb-14 relative'>
           <a
-            className='link-button-loan--button bg-primary hover:bg-primary !text-white border'
+            className='link-button-loan--button bg-primary bg-primary !text-white border'
 //            href='app/borrow/assets'
             rel='noreferrer'
             target='_blank'
@@ -19,7 +19,7 @@ const GetLiquidity = () => {
             Get a loan now
           </a>
           <a
-            className='link-button-lend--button text-secondary hover:bg-secondary hover:text-white'
+            className='link-button-lend--button mt-[20px] sm:mt-[0px] bg-primary text-white'
 //            href='app/lend/assets'
             target='_blank'
             rel='noreferrer'

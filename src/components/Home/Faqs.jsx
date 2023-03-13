@@ -48,7 +48,9 @@ const FaqItem = ({
             d='M12 0H8V8H0V12H8V20H12V12H20V8H12V0Z'
           ></path>
         </svg>
-        {question}
+        <p className='text-left'>
+          {question}
+        </p>
       </button>
       <div
         className={clsx(

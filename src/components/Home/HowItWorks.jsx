@@ -43,51 +43,37 @@ const HowItWorks = () => {
             id='panel:R229:0'
             aria-labelledby='tab:R229:0'
           >
-            <div className='w-full flex flex-col'>
-              <ol className='font-Lato gap-y-10 my-10  flex flex-col relative overflow-hidden '>
+            <div className='relative w-full flex flex-col lg:flex-row items-center'>
+              <ol className='flex flex-col font-Lato gap-y-10 my-10 relative overflow-hidden '>
                 {borrowersList.map((item, i) => {
                   return (
                     <li
                       key={item.id}
                     >
-                      <div className='w-1/2 text-left py-1 peer flex relative px-5'>
-                        <div className=' mx-5 relative'>
+                      <div className='flex flex-row justify-start w-[60vw] md:w-1/2 text-left py-1 peer relative px-5'>
+                        <div className='max-w-[50%] mt-0 mb-2'>
                           <h1 className='relative text-[36px] text-primary font-bold font-Lato px-5'>
                             {i + 1}
                           </h1>
-                          <div className='hidden flex w-full h-full max-h-[30px] max-w-[30px] absolute top-10 right-2 bg-primary blur-lg'></div>
                         </div>
                         <div className='flex flex-col justify-center'>
                           <p className='font-Roboto text-[18px]'>{item.description}</p>
                         </div>
                       </div>
-                      {
-                        item.id == step &&
-                        <div
-                          style={{
-                            zIndex: 10 - i,
-                          }}
-                          className={clsx(
-                            'flex flex-col justify-center w-1/2 h-full absolute right-0 top-0',
-                            '',
-                          )}
-                        >
-                          <div className='flex flex-col gap-5 justify-center items-center'>
-                            <img
-                              alt=''
-                              loading='lazy'
-                              src='/images/nft3.png'
-                              style={{
-                                borderRadius: '20px',
-                              }}
-                            />
-                          </div>
-                        </div>
-                      }
                     </li>
                   )
                 })}
               </ol>
+              <div className='md:absolute max-w-[90%] md:max-w-[50%] flex justify-center items-center md:min-h-[600px] md:right-0  gap-5'>
+                <img
+                  alt=''
+                  loading='lazy'
+                  src='/images/LoanSharks-how-does-it-work (1).png'
+                  style={{
+                    borderRadius: '20px',
+                  }}
+                />
+              </div>
               <div className='hidden self-start px-24 my-10 rounded'>
                 <a
                   className='bg-[#EBD259] font-bold text-black py-4 px-10 rounded'

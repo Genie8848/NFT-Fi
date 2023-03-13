@@ -107,6 +107,7 @@
     font-weight: 700;
     gap: .75rem;
     height: 48px;
+    width: 150px;
     justify-content: center;
     letter-spacing: .1px;
     line-height: 24px;
@@ -128,6 +129,7 @@
     font-weight: 700;
     gap: .75rem;
     height: 48px;
+    width: 150px;
     justify-content: center;
     letter-spacing: .1px;
     line-height: 24px;
