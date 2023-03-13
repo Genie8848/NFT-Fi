@@ -64,14 +64,11 @@ const HowItWorks = () => {
                   )
                 })}
               </ol>
-              <div className='md:absolute max-w-[90%] md:max-w-[50%] flex justify-center items-center md:min-h-[600px] md:right-0  gap-5'>
+              <div className='my-10 md:absolute max-w-[90%] md:max-w-[50%] flex justify-center items-center md:min-h-[600px] md:right-0  gap-5'>
                 <img
                   alt=''
                   loading='lazy'
                   src='/images/LoanSharks-how-does-it-work_V.png'
-                  style={{
-                    borderRadius: '20px',
-                  }}
                 />
               </div>
               <div className='hidden self-start px-24 my-10 rounded'>
