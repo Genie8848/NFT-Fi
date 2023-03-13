@@ -34,7 +34,7 @@ const JoinCommunity = () => {
             target='__blank'
           >
             <img
-              src='/icons/Discord.png'
+              src='/icons/discord.png'
               alt='Discord'
               width='40'
               height='40'
