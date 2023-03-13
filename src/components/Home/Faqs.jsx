@@ -89,7 +89,7 @@ const Faqs = () => {
     },
     {
       question: 'What happens if loan is not repaid?',
-      answer: ' lender will be able to claim NFT used as collateral and borrower stays with capital from the lender.'
+      answer: ' Lender will be able to claim NFT used as collateral and borrower stays with capital from the lender.'
     },
     {
       question: 'What fee does LoanSharks charge?',
@@ -135,7 +135,7 @@ const Faqs = () => {
         <h2 className='text-4xl font-Lato my-5 font-bold title-module--title--73b11 title-module--center--3ded2'>
           FAQs
         </h2>
-        <p className='text-lg max-w-[850px] py-2 font-Roboto text-center intro-module--intro--5e21f questions-module--intro--d24dc intro-module--center--87e61'>
+        <p className='text-lg max-w-[90%] py-2 font-Roboto text-center intro-module--intro--5e21f questions-module--intro--d24dc intro-module--center--87e61'>
           Peer-to-peer NFT lending is a pretty simple concept, and you can quickly learn the basics
           by scrolling through our FAQ section.
         </p>

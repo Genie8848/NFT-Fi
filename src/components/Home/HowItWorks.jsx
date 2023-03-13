@@ -32,8 +32,8 @@ const HowItWorks = () => {
   return (
     <section id='howtoworks' className='!overflow-y-hidden pt-48 flex justify-center bg-[#1E1E1E] text-white'>
       <div className='w-90 relative z-20 text-center flex flex-col items-center'>
-        <h2 className='font-semibold text-4xl leading-[53px] font-Lato'>How loans will works</h2>
-        <p className=' max-w-3xl text-center font-normal'>
+        <h2 className='font-semibold max-w-[80%] text-4xl leading-[53px] font-Lato'>How loans will works</h2>
+        <p className='max-w-[80%] text-center font-normal'>
           On LoanSharks you will be able to be the borrower or the lender.
         </p>
         <div className='font-Lato w-full' data-rttabs='true'>
@@ -68,7 +68,7 @@ const HowItWorks = () => {
                 <img
                   alt=''
                   loading='lazy'
-                  src='/images/LoanSharks-how-does-it-work (1).png'
+                  src='/images/LoanSharks-how-does-it-work_V.png'
                   style={{
                     borderRadius: '20px',
                   }}

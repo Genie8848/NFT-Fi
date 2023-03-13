@@ -5,8 +5,8 @@ const GetLiquidity = () => {
   return (
     <section className='bg-[#1E1E1E] flex justify-center py-24 text-white'>
       <div className='w-6/6 relative z-20 flex flex-col items-center  gap-y-10 md:w-10/12 lg:w-4/5 xl:w-1/3'>
-        <h2 className='text-3xl text-center font-Lato'>
-          Put your NFTs to work and get the liquidity you need.
+        <h2 className='text-3xl text-center max-w-[80%] font-Lato'>
+          Put your NFTs to work and get the liquidity you need
         </h2>
 
         <div className='flex flex-col sm:flex-row items-center justify-start gap-x-5 mb-14 relative'>
