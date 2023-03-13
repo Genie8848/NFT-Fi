@@ -6,7 +6,7 @@ const WhyNFT = () => {
     <section className='section-module--section why-nftfi-module--section- flex justify-center py-40 text-white bg-[#2A292A]'>
       <div className='flex flex-col lg:flex-row items-center why-nftfi-module--container w-11/12 lg:w-9/12 gap-5 '>
         <div className='w-full md:w-2/3 lg:text-left lg:w-1/3 text-center flex flex-1 flex-col gap-8'>
-          <h2 className='text-5xl font-bold font-Lato text-white '>Why loan sharks?</h2>
+          <h2 className='text-5xl font-bold font-Lato text-white '>Why LoanSharks?</h2>
           <p className='text-gray-400 font-Roboto'>
             Our mission is to become the number 1 collateralized loan marketplace on the Hedera Network and provide worthwhile revenue share/Utility for all of our Debt collector NFT holders.
           </p>

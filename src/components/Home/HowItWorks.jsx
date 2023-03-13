@@ -50,7 +50,7 @@ const HowItWorks = () => {
                     <li
                       key={item.id}
                     >
-                      <div className='flex flex-row justify-start w-[60vw] md:w-1/2 text-left py-1 peer relative px-5'>
+                      <div className='flex flex-row justify-start w-[80vw] md:w-1/2 text-left py-1 peer relative px-5'>
                         <div className='max-w-[50%] mt-0 mb-2'>
                           <h1 className='relative text-[36px] text-primary font-bold font-Lato px-5'>
                             {i + 1}

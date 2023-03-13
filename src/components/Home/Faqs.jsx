@@ -85,7 +85,7 @@ const Faqs = () => {
     },
     {
       question: 'Reason for funding loans?',
-      answer: 'You can make profits from funding loans using hbar.'
+      answer: 'You can make profits from funding loans using Hbar.'
     },
     {
       question: 'What happens if loan is not repaid?',
@@ -97,7 +97,7 @@ const Faqs = () => {
     },
     {
       question: 'What if NFT in escrow receives airdrop?',
-      answer: 'Borrower will be able to claim NFT, airdrop ,or rewards if loan is repaid, if not lender will keep all.'
+      answer: 'Borrower will be able to claim NFT, airdrop or rewards if loan is repaid, if not lender will keep all.'
     },
     {
       question: 'What NFT projects will be listed?',
@@ -105,7 +105,7 @@ const Faqs = () => {
     },
     {
       question: 'Utility for NFT?',
-      answer: 'Rev share , 10+ NFTs you get special access to chat, and loads more to come as LoanSharks scales.'
+      answer: 'Rev share, 10+ NFTs you get special access to chat, and loads more to come as LoanSharks scales.'
     },
     {
       question: 'When will platform be fully functional and audited?',

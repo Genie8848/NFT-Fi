@@ -4,9 +4,9 @@ import './home_hero.css'
 const HomeHero = () => {
   return (
     <section className='section-module--hero'>
-      <div className='flex flex-col lg:flex-row items-center text-center justify-center'>
+      <div className='flex flex-col md:flex-row items-center text-center justify-center'>
         <div className='flex flex-col items-center lg:items-start flex-start'>
-          <div className='w-4/5 text-center font-Lato lg:text-left lg:w-full lg:max-w-[500px]'>
+          <div className='text-center font-Lato md:text-left md:w-3/5 md:max-w-[700px] lg:w-4/5 lg:max-w-[600px] xl:w-4/5 xl:max-w-[900px]'>
             <h1 className='text-[32px] font-[700] text-white lg:hero-title-module--title'
             >
               Utilize your NFT as collateral to obtain a cryptocurrency loan
