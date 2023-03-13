@@ -30,7 +30,7 @@ const AppNavbar = () => {
         <div className='logo'>
           <Link to='/'>
             <svg width='103' height='81' viewBox='0 0 310 246' xmlns='http://www.w3.org/2000/svg'>
-              <title>NFTfi</title>
+              <title>LoanSharks</title>
               <g id='Page-1' stroke='none' strokeWidth='1' fill='none' fillRule='evenodd'>
                 <g id='logo'>
                   <path
@@ -257,11 +257,6 @@ const AppNavbar = () => {
             </div>
           </div>
 
-          <div className='help hidden'>
-            <a className='link help' target='_blank' rel='noreferrer' to='https://discord.gg/nftfi'>
-              Help
-            </a>
-          </div>
           <div className='wallet-not-connected px-14 py-2 rounded-full border-2 hover:bg-black hover:font-bold'>
             <button className='btn uppercase'>Connect</button>
           </div>

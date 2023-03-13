@@ -80,15 +80,15 @@ const Faqs = () => {
       answer: 'LoanSharks platform will be double audited and will have a full time dev maintaining platform on a daily basis.'
     },
     {
-      question: 'Reason for taking NFT loans?',
+      question: 'Why take out an NFT loan?',
       answer: 'To unlock liquidity from an illiquid NFT.'
     },
     {
-      question: 'Reason for funding loans?',
+      question: 'Why find an NFT loan?',
       answer: 'You can make profits from funding loans using Hbar.'
     },
     {
-      question: 'What happens if loan is not repaid?',
+      question: 'What happens if a loan is not repaid?',
       answer: ' Lender will be able to claim NFT used as collateral and borrower stays with capital from the lender.'
     },
     {
@@ -104,7 +104,7 @@ const Faqs = () => {
       answer: 'We want to offer as much NFT projects as possible as collateral options.'
     },
     {
-      question: 'Utility for NFT?',
+      question: 'What utility does the Debt Collector NFT have?',
       answer: 'Rev share, 10+ NFTs you get special access to chat, and loads more to come as LoanSharks scales.'
     },
     {
@@ -112,7 +112,7 @@ const Faqs = () => {
       answer: 'Sometime in April.'
     },
     {
-      question: 'When rev share starts?',
+      question: 'When does rev share for Debt Collectors NFT start?',
       answer: '2 months after dapp being fully functional.'
     },
     {

@@ -9,15 +9,15 @@ const HowItWorks = () => {
   const borrowersList = [
     {
       id: 1,
-      description: 'All loans will be in Hbar.',
-    },
-    {
-      id: 2,
       description: 'You will be able to list your NFT with loan agreement to your specifications, a lender can come and fund the loan.',
     },
     {
-      id: 3,
+      id: 2,
       description: 'Loan agreements have option for negotiation with the variables mentioned above.',
+    },
+    {
+      id: 3,
+      description: 'All loans will be in Hbar.',
     },
     {
       id: 4,
@@ -31,8 +31,8 @@ const HowItWorks = () => {
 
   return (
     <section id='howtoworks' className='!overflow-y-hidden pt-48 flex justify-center bg-[#1E1E1E] text-white'>
-      <div className='w-90 relative z-20 text-center flex flex-col items-center'>
-        <h2 className='font-semibold max-w-[80%] text-4xl leading-[53px] font-Lato'>How loans will work</h2>
+      <div className='w-90 relative z-20 text-center flex flex-col items-center gap-7'>
+        <h2 className='text-5xl font-bold font-Lato max-w-[80%] leading-[53px]'>How loans will work</h2>
         <p className='max-w-[80%] text-center font-normal'>
           On LoanSharks you will be able to be the borrower or the lender.
         </p>
@@ -44,7 +44,7 @@ const HowItWorks = () => {
             aria-labelledby='tab:R229:0'
           >
             <div className='relative w-full flex flex-col lg:flex-row items-center'>
-              <ol className='flex flex-col font-Lato gap-y-10 my-10 relative overflow-hidden '>
+              <ol className='flex flex-col font-Lato gap-y-10 my-5 relative overflow-hidden '>
                 {borrowersList.map((item, i) => {
                   return (
                     <li
