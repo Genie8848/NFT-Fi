@@ -17,7 +17,7 @@ const HowItWorks = () => {
     },
     {
       id: 3,
-      description: 'All loans will be in Hbar.',
+      description: 'All loans will be in HBAR.',
     },
     {
       id: 4,

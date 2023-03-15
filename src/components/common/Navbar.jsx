@@ -77,9 +77,9 @@ const Navbar = () => {
         <nav className='hidden font-Lato flex-[3] xl:flex-[2] lg:flex'>
           <ul className='flex list-none justify-between items-center py-6 text-white gap-x-5 w-full'>
             <li>
-              <Link
-                href='/'
-                aria-current='page'
+              <Link onClick={() => {
+                window.location.replace("/#home");
+              }}
                 className='text-white decoration-transparent py-4 px-2 font-medium text-sm'
               >
                 <span>Home</span>
@@ -92,24 +92,26 @@ const Navbar = () => {
                 <span>How it works</span>
               </Link>
             </li>
-            <li>
-              <a
-                //                href='app/lend/assets'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <span>Lend</span>
-              </a>
-            </li>
-            <li>
-              <a
-                //                href='app/borrow/assets'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <span>Borrow</span>
-              </a>
-            </li>
+            {/*
+              <li>
+                <a
+                  //                href='app/lend/assets'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <span>Lend</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  //                href='app/borrow/assets'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <span>Borrow</span>
+                </a>
+              </li>
+            */}
             <li>
               <a href='https://discord.gg/sMTDDWyK' rel='noreferrer' target='_blank'>
                 <span>Community</span>
@@ -137,7 +139,7 @@ const Navbar = () => {
                   borderRadius: '3px',
                 }}
               >
-                Open dApp
+                Comming Soon{/*Open dApp*/}
               </Link>
             </li>
           </ul>
@@ -172,8 +174,9 @@ const Navbar = () => {
                 <div className="px-1 py-1 ">
                   <Menu.Item>
                     {({ active }) => (
-                      <Link
-                        href='/'
+                      <Link onClick={() => {
+                        window.location.replace("/#home");
+                      }}
                         className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
                           } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                       >
@@ -193,32 +196,34 @@ const Navbar = () => {
                       </Link>
                     )}
                   </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a
-                        //                href='app/lend/assets'
-                        rel='noreferrer'
-                        target='_blank'
-                        className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                          } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                      >
-                        Lend
-                      </a>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <a
-      //                href='app/borrow/assets'
-                        rel='noreferrer'
-                        target='_blank'
-                        className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
-                          } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
-                      >
-                        Borrow
-                      </a>
-                    )}
-                  </Menu.Item>
+                  {/*
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          //                href='app/lend/assets'
+                          rel='noreferrer'
+                          target='_blank'
+                          className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        >
+                          Lend
+                        </a>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item>
+                      {({ active }) => (
+                        <a
+                          //                href='app/borrow/assets'
+                          rel='noreferrer'
+                          target='_blank'
+                          className={`${active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                            } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                        >
+                          Borrow
+                        </a>
+                      )}
+                    </Menu.Item>
+                          */}
                   <Menu.Item>
                     {({ active }) => (
                       <a href='https://discord.gg/sMTDDWyK' rel='noreferrer' target='_blank'

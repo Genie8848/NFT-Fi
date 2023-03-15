@@ -16,17 +16,19 @@ const GetLiquidity = () => {
             rel='noreferrer'
             target='_blank'
           >
-            Get a loan now
+            Coming Soon{/*Get a loan now*/}
           </a>
-          <a
-            className='link-button-lend--button mt-[20px] sm:mt-[0px] bg-primary text-white'
-//            href='app/lend/assets'
-            target='_blank'
-            rel='noreferrer'
-            disabled
-          >
-            I want to lend
-          </a>
+          {/*
+            <a
+              className='link-button-lend--button mt-[20px] sm:mt-[0px] bg-primary text-white'
+  //            href='app/lend/assets'
+              target='_blank'
+              rel='noreferrer'
+              disabled
+            >
+              I want to lend
+            </a>
+  */}
         </div>
       </div>
     </section>

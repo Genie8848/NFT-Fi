@@ -73,19 +73,19 @@ const Faqs = () => {
   const faqList = [
     {
       question: 'What is a P2P decentralized NFT loan marketplace?',
-      answer: 'It is a marketplace where you can list an NFT as collateral, borrow off an illiquid NFT, and fund loans to generate profits.'
+      answer: 'It is a marketplace where you can list a NFT as collateral, borrow off an illiquid NFT, and fund loans to generate profits.'
     },
     {
       question: 'What measure of security is LoanSharks taking?',
       answer: 'LoanSharks platform will be double audited and will have a full time dev maintaining platform on a daily basis.'
     },
     {
-      question: 'Why take out an NFT loan?',
+      question: 'Why take out a NFT loan?',
       answer: 'To unlock liquidity from an illiquid NFT.'
     },
     {
-      question: 'Why find an NFT loan?',
-      answer: 'You can make profits from funding loans using Hbar.'
+      question: 'Why fund a NFT loan?',
+      answer: 'You can make profits from funding loans using HBAR.'
     },
     {
       question: 'What happens if a loan is not repaid?',
@@ -117,7 +117,7 @@ const Faqs = () => {
     },
     {
       question: 'When will timer start for repayment?',
-      answer: 'As soon as borrower accepts loan and receives Hbar in wallet.'
+      answer: 'As soon as borrower accepts loan and receives HBAR in wallet.'
     },
     {
       question: 'Can I get liquidated?',

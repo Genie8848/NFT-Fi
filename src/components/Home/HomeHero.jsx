@@ -3,7 +3,7 @@ import './home_hero.css'
 
 const HomeHero = () => {
   return (
-    <section className='section-module--hero'>
+    <section id="home" className='section-module--hero'>
       <div className='flex flex-col md:flex-row items-center text-center justify-center'>
         <div className='flex flex-col items-center lg:items-start flex-start'>
           <div className='max-w-[80%] text-center font-Lato md:text-left md:w-3/5 md:max-w-[700px] lg:w-4/5 lg:max-w-[600px] xl:w-4/5 xl:max-w-[900px]'>
@@ -22,16 +22,18 @@ const HomeHero = () => {
               rel='noreferrer'
               target='_blank'
             >
-              Get a loan now
+              Coming Soon{/*Get a loan now*/}
             </a>
-            <a
-              className='link-button-lend--button text-secondary bg-primary text-white'
-              //              href='/app/lend/assets'
-              target='_blank'
-              rel='noreferrer'
-            >
-              I want to lend
-            </a>
+            {/*
+              <a
+                className='link-button-lend--button text-secondary bg-primary text-white'
+                //              href='/app/lend/assets'
+                target='_blank'
+                rel='noreferrer'
+              >
+                I want to lend
+              </a>
+  */}
           </div>
         </div>
         <div className='flex flex-col text-white'>

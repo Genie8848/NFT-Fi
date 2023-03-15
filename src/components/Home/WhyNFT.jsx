@@ -41,7 +41,7 @@ const WhyNFT = () => {
               Returns
             </h1>
             <p className='text-gray-400 font-Roboto'>
-              Make great returns from Hbar you have sitting around by funding loans.
+              Make great returns from HBAR you have sitting around by funding loans.
             </p>
           </div>
         </div>

@@ -39,22 +39,28 @@ const Footer = () => {
           <nav className='text-center lg:gap-5 lg:w-3/5 grid sm:grid-cols-2 lg:grid-cols-5 items-center'>
             <ul className='flex flex-col gap-y-1'>
               <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
-                <h3>About Us</h3>
+                <a href='https://loansharks.gitbook.io/loansharks/team' target='__blank'>
+                  <h3>About Us</h3>
+                </a>
               </li>
             </ul>
+            {/*
+              <ul className='flex flex-col gap-y-1'>
+                <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
+                  <h3>Terms of Use</h3>
+                </li>
+              </ul>
+              <ul className='flex flex-col gap-y-1'>
+                <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
+                  <h3>Privacy Policy</h3>
+                </li>
+              </ul>
+              */}
             <ul className='flex flex-col gap-y-1'>
               <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
-                <h3>Terms of Use</h3>
-              </li>
-            </ul>
-            <ul className='flex flex-col gap-y-1'>
-              <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
-                <h3>Privacy Policy</h3>
-              </li>
-            </ul>
-            <ul className='flex flex-col gap-y-1'>
-              <li className='font-bold font-Lato text-[24px] tracking-wider mb-5'>
-                <h3>Contact Us</h3>
+                <a href="mailto:loansharkshbar@gmail.com" target='__blank'>
+                  <h3>Contact Us</h3>
+                </a>
               </li>
             </ul>
           </nav>
